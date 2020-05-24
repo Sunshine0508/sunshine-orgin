@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  React: /react
   Archives: /archives
 rss: /atom.xml
 
