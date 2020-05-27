@@ -5,15 +5,15 @@
 # Site
 title: Sunshine
 subtitle: Sunshine的博客
-description: ''
+description: '热爱漫无边际<br>生活自有分寸<br>不去抱怨<br>不怕孤独<br>努力沉淀<br>愿追寻梦想的的路上<br>成为更好的自己'
 keywords:
 author: Sunshine
 language: zh-CN
-timezone: ''
+timezone:  Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://zhaohui58.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md # 部署的时候不包含的文件
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -45,9 +45,9 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
+  enable: true #是否开启代码高亮
+  line_number: true #是否增加代码行号
+  auto_detect: true #自动判断代码语言
   tab_replace: ''
   wrap: true
   hljs: false
@@ -101,3 +101,23 @@ deploy:
   type: git
   repo: https://github.com/Sunshine0508/Sunshine0508.git
   branch: master
+
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    #黑猫的模型
+    use: live2d-widget-model-hijiki
+    # 这是白猫的模型
+    # use: live2d-widget-model-tororo
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
